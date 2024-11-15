@@ -11,7 +11,7 @@ contract TokenControl {
     }
 
     modifier onlyAdmin() {
-        require(admins[msg.sender], "Access restricted to admins");
+        require(admins[msg.sender], "Access restricted to admins only");
         _;
     }
 
